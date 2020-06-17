@@ -1,24 +1,16 @@
-import React, { useEffect } from 'react';
+import * as React from 'react';
 
-import './App.css';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import 'bootstrap/scss/bootstrap.scss';
 import 'font-awesome/scss/font-awesome.scss';
+import './App.css';
 
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
-import { BODY_STYLE, DEMO_PROPS } from './constant';
+import { DEMO_PROPS } from './constant';
 import TaskItem from './TaskItem';
 
 const App = () => {
-  useEffect(() => {
-    const { BACKGROUND_COLOR, COLOR, FONT_SIZE } = BODY_STYLE;
-
-    document.body.style.backgroundColor = BACKGROUND_COLOR;
-    document.body.style.color = COLOR;
-    document.body.style.fontSize = FONT_SIZE;
-  }, []);
-
   return (
     <div className="row d-flex justify-content-center container">
       <div className="col-md-8">
